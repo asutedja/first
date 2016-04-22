@@ -1,0 +1,56 @@
+
+<html>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+<head>
+  <title>HTML Document</title>
+</head>
+<body>
+<div id="everything">
+      <h1>A heading!</h1>
+      <p>Here's some text!</p>
+      <p>Here's a second set of text!</p>
+      <div class="holder">
+          <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ul>
+      </div>
+      <div class="holder">
+          <ol>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
+          </ol>
+      </div>
+      <div id="change-me">This part needs to change!</div>
+      <div id="secret">We should hide this!</div>
+  </div>
+  <script>
+  $('h1').css('color', 'blue');
+  $('body').css('background-color', 'red');
+  $('#everything').css('font-size', 'larger');
+  $('.holder').css('border', 'solid black');
+  $('ul li').css('font-weight', 'bold');
+  $('p').css('color','green');
+  $('#secret').css('display', 'none');
+  $('#secret').css('display', 'block');
+  $('#change-me').append('  CHANGED');
+  $('#change-me').html('<p>Here is one paragraph.</p> <p>Here is another one.</p>' );
+  $('#change-me').append('<p> I appended this one. </p>');
+  $('li').text('I am changing all the li.');
+  $('li').append('I am appending to all the li.');
+  $('#everything').append('<ol> <li> Item 1</li> <li> Item 2</li> <li> Item 3</li> </ol>');
+
+
+
+
+
+
+  var a = 4;
+  console.log(a)
+
+
+  </script>
+</body>
+</html>

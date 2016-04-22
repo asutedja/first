@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  
+</head>
+<body>
+	<h1></h1>
+	<IMG></IMG>
+	<DIV ID = "notification"></DIV>
+	<DIV class = "container"></DIV>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+$('body').css('background-color', 'red');
+$('img').attr('src','http://i.imgur.com/nWGCwiE.gif');
+
+$('h1').text('hello');
+$('#notification').html('<div class="alert">Hold on! <b>an error</b> has occured!</p>');
+$('.container').append("<p>What's the difference between <i>.append()</i> and .html()?</p>");
+</script>
+</body>
+
+</html>
